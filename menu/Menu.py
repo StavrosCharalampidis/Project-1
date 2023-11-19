@@ -7,9 +7,9 @@ class Menu:
         self.x = x
         self.y = y
     
-    def menu(self, option):
+    def menu(self, option: str, x: float | int, y: float | int) -> float | int:
         if self.option == "+":
-            Calculator.add() 
+            Calculator.add(self.x, self.y) 
     
         
     
