@@ -2,8 +2,8 @@
 
 from calculator import Calculator
 
-x = 0.0
-y = 0
+x = 2
+y = 2
 
 calculator = Calculator(x, y)
-print(calculator.div(x, y))
+print(calculator.add(x, y))
