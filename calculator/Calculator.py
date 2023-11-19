@@ -18,10 +18,10 @@ class Calculator:
         return self.x - self.y
     
     def div(self, x: float | int, y: float | int) -> None:
-        if not isinstance(x, int | float):
+        if not isinstance(x, int | float) and not isinstance(y, int | float):
             raise TypeError
         
-        if y != 0:
+        elif y != 0:
             print(self.x - self.y)
         else:
             print("Error")
