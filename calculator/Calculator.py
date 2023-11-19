@@ -23,5 +23,6 @@ class Calculator:
         
         elif y != 0:
             return self.x / self.y
+        
         else:
             return "Error"
