@@ -22,6 +22,6 @@ class Calculator:
             raise TypeError
         
         elif y != 0:
-            print(self.x / self.y)
+            return self.x / self.y
         else:
-            print("Error")
+            return "Error"
