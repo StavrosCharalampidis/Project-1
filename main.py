@@ -2,7 +2,7 @@
 
 from calculator import Calculator
 
-x = 0
+x = 0.0
 y = 2
 
 calculator = Calculator(x, y)
