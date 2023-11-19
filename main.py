@@ -2,8 +2,8 @@
 
 from calculator import Calculator
 
-x = float(input("Enter First Number: "))
-y = float(input("Enter Second Number: "))
+x = 2.0
+y = 2
 
 calculator = Calculator(x, y)
-print(calculator.div(x, y))
+print(calculator.add(x, y))
