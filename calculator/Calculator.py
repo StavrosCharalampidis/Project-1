@@ -11,8 +11,8 @@ class Calculator:
     def minus(self, x: float | int, y: float | int) -> float | int:
         return self.x - self.y
     
-    def div(self, x: float | int, y: float | int) -> float | int:
+    def div(self, x: float | int, y: float | int) -> None:
         if y != 0:
-            return self.x - self.y
+            print(self.x - self.y)
         else:
             print("Error")
