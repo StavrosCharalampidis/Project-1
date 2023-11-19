@@ -1,4 +1,7 @@
 #!bin/python3
-import Calculator
+from calculator import Calculator
 
-print("hello")
+x = 5
+y = 5
+calculator = Calculator(x, y)
+print(calculator.add(x, y))
