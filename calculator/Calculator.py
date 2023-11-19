@@ -6,6 +6,8 @@ class Calculator:
         self.y = y
     
     def add(self, x: float | int, y: float | int) -> float | int:
+        if not isinstance(x, int):
+            raise TypeError
         return self.x + self.y
 
     def minus(self, x: float | int, y: float | int) -> float | int:
