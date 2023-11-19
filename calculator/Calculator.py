@@ -8,12 +8,19 @@ class Calculator:
     def add(self, x: float | int, y: float | int) -> float | int:
         if not isinstance(x, int | float):
             raise TypeError
+        
         return self.x + self.y
 
     def minus(self, x: float | int, y: float | int) -> float | int:
+        if not isinstance(x, int | float):
+            raise TypeError
+        
         return self.x - self.y
     
     def div(self, x: float | int, y: float | int) -> None:
+        if not isinstance(x, int | float):
+            raise TypeError
+        
         if y != 0:
             print(self.x - self.y)
         else:
