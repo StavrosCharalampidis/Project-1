@@ -17,7 +17,7 @@ class Calculator:
         
         return self.x - self.y
     
-    def div(self, x: int | float, y: int | float) -> None:
+    def div(self, x: float | int, y: float | int) -> float | int | None:
         if not isinstance(x, int | float) and not isinstance(y, int | float):
             raise TypeError
         
