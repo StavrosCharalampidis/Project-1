@@ -2,6 +2,7 @@
 
 from menu.Menu import Menu
 from calculator import Calculator
+
 x: int = 0
 y: int = 1
 
