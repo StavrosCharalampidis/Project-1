@@ -5,9 +5,9 @@ class Menu(Calculator):
         super().__init__(x, y)
         self.option = option
         
-    def menu(self, option, x, y):
-        if option == "+":
-            print(Calculator.add(x, y)) 
+    def menu(self):
+        if self.option == "+":
+            print(super().add(self.x, self.y)) 
         else:
             pass
 
