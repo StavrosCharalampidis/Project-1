@@ -1,6 +1,6 @@
 #!bin/python3
 
-class Calculator:
+class Calculator():
     def __init__(self, x: float | int, y: float | int) -> None:
         self.x = x
         self.y = y
