@@ -9,7 +9,8 @@ def menuFloat() -> None:
         
     while(option not in "+-/*"):
         option: str = input("Enter Option (+ - / *) and q to exit: ")
-        break
+        if (option in "+-/*"):
+            break
     
    
     x: float = float(input("Enter Number 1: "))
@@ -26,7 +27,8 @@ def menuInt() -> None:
         
     while(option not in "+-/*"):
         option: str = input("Enter Option (+ - / *) and q to exit: ")
-        break
+        if (option in "+-/*"):
+            break
     
    
     x: int = int(input("Enter Number 1: "))
@@ -39,7 +41,7 @@ def menuInt() -> None:
 if __name__ == '__main__':   
     IntOrFloat: str = input("Enter The Nuber type int for intigers and float for float nublers only: ")
     
-    while(1):
+    while(IntOrFloat != "int" and IntOrFloat != "float"):
     
         if (IntOrFloat != "int" or IntOrFloat != "float"):
             IntOrFloat: str = input("Enter The Nuber type int for intigers and float for float nublers only: ")
