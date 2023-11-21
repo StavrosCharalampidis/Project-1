@@ -1,30 +1,38 @@
 #!bin/python3
+from typing import Union
+
+T = Union[int, float]
 
 class Calculator():
-    def __init__(self, x: float | int, y: float | int) -> None:
+    def __init__(self, x: T, y: T) -> None:
         self.x = x
         self.y = y
     
-    def add(self, x: float | int, y: float | int) -> float | int:
-        if not isinstance(x, int | float):
+    def add(self, x: T, y: T) -> T:
+        if not isinstance(x, int | float) or not isinstance(y, int | float):
             raise TypeError
         
         return self.x + self.y
 
-    def minus(self, x: float | int, y: float | int) -> float | int:
-        if not isinstance(x, int | float):
+    def minus(self, x: T, y: T) -> T:
+        if not isinstance(x, int | float) or not isinstance(y, int | float):
             raise TypeError
         
         return self.x - self.y
     
-    def div(self, x: float | int, y: float | int) -> None:
+    def mul(self, x: T, y: T) -> T:
+        if not isinstance(x, int | float) or not isinstance(y, int | float):
+            raise TypeError
+        
+        return self.x * self.y
+    
+    def div(self, x: T, y: T) -> None:
+        if not isinstance(x, int | float) or not isinstance(y, int | float):
+            raise TypeError
+        
         if y != 0:
             print(self.x / self.y)
-        
+       
         else:
-            print("Error")
-        
-    
-
-        
-  
+            raise ZeroDivisionError
+       
