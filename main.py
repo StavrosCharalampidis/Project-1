@@ -1,5 +1,5 @@
 #!bin/python3
-from menu.Menu import Menu
+from menu import Menu
 from calculator import Calculator
 
 def menuFloat() -> None:
@@ -38,12 +38,17 @@ def menuInt() -> None:
         
 if __name__ == '__main__':   
     IntOrFloat: str = input("Enter The Nuber type int for intigers and float for float nublers only: ")
-    while(IntOrFloat != "int" or IntOrFloat != "float"):
-        IntOrFloat: str = input("Enter The Nuber type int for intigers and float for float nublers only: ")
-        break
+    
+    while(1):
+    
+        if (IntOrFloat != "int" or IntOrFloat != "float"):
+            IntOrFloat: str = input("Enter The Nuber type int for intigers and float for float nublers only: ")
+        if (IntOrFloat == "int" or IntOrFloat == "float"):
+            break
+    
     while(IntOrFloat == "int"): 
         menuInt()
         
-    while(True): 
+    while(IntOrFloat == "float"): 
         menuFloat()
 
